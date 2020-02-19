@@ -72,119 +72,183 @@ nav li:hover{
   background-color: #2e302f;
 }
 
+/* struttura centrale */
 main::after{
   content: "";
   display: table;
   clear: both;
 }
 
+aside, #centro {
+  float:left;
+}
+
 /* parte sinistra */
-.sinistro {
-  float: left;
-  width: 300px;
-  margin: 10px;
+#sinistro{
+  height: auto;
+  width: 20%;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-.unos{
-  /* debug */
- height: 300px;
- border: solid black;
-  /* fine debug */
+.pages{
+ background: white;
+ padding: 20px;
  margin-bottom: 10px;
 }
 
-.dues{
- /* debug */
- height: 200px;
- border: solid black;
- /* fine debug */
- margin-bottom: 10px;
+ul{
+  list-style-type: none;
+}
+
+h3{
+  color: #504741;
+}
+
+#sinistro li{
+  color: #99cc33;
+  padding: 5px 0px 5px 10px;
+  margin-bottom: 10px;
+}
+
+
+.archives{
+  background: white;
+  padding: 20px;
+  margin-bottom: 10px;
  }
 
- .tres{
-  /* debug */
-  height: 250px;
-  border: solid black;
-  /* fine debug */
- }
+.meta{
+   background: white;
+   padding: 20px;
+   margin-bottom: 10px;
+}
+
+#sinistro li:hover{
+  cursor: pointer;
+}
 
 /* parte centrale */
-section{
-/* debug */
-  height: 1500px;
-  width: 700px;
-  border: solid black;
-  /* fine debug */
+
+#centro{
+  width: 56%;
+  height: auto;
   margin: 10px;
-  float: left;
+}
+
+.primo-articolo{
+  background: white;
+  padding: 20px;
+  border-bottom: solid 1px black;
+}
+
+.articolo{
+  /* margin: 10px; */
+}
+
+h2{
+ color: #504741;
+ font-size: 28px;
+ text-align: center;
+}
+
+article img{
+  height: auto;
+  width: calc(100% + 40px);
+  transform: translate(-20px, 0px);
+}
+
+.secondo-articolo{
+  background: white;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 /* parte destra */
-.destro{
-  float: right;
-  width: 289px;
-  margin: 10px;
-  float: left;
+#destro{
+  float:right;
+  width: 20%;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
-.unod{
-/* debug */
- height: 150px;
- border: solid black;
- /* fine debug */
+.cerca{
+ background: white;
+ padding: 60px;
  margin-bottom: 10px;
 }
 
-.dued{
-/* debug */
- height: 100px;
- border: solid black;
- /* fine debug */
- }
+#destro input{
+  height: 50px;
+}
 
- /* fondo pagina */
- #ricerca::after{
-   content: "";
-   display: table;
-   clear: both;
- }
+#destro input[type=text]{
+  float: left;
+  width: 70%;
+  transform:translate(-10%, -20%);
+}
 
- #ricerca{
-  background: white;
-  margin-left: 10px;
+#destro input[type=submit]{
+  float: right;
+  width: 30%;
+  transform:translate(-10%, -20%);
+}
+
+.cerca::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tag-cloud{
+ background: white;
+ padding: 20px;
+ margin-bottom: 10px;
+}
+
+/* fondo pagina */
+#ricerca::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#ricerca{
+ background: white;
+ margin-left: 10px;
+ margin-right: 10px;
+ border-bottom: solid 1px grey;
+ padding: 20px;
+}
+
+.colonna{
+  float: left;
+  width: 20%;
   margin-right: 10px;
-  border-bottom: solid 1px grey;
-  padding: 20px;
- }
-
- .colonna{
-   float: left;
-   width: 20%;
-   margin-right: 10px;
-   margin-left: 10px;
-   padding: 50px;
- }
- .colonna:nth-child(3){
-   width: 15%;
- }
-
- .colonna:last-child{
-   width: 35%;
- }
-
- .colonna li:hover{
-   cursor: pointer;
- }
-
- /* footer */
- footer::after{
-   content: "";
-   display: table;
-   clear: both;
- }
-  footer{
-  background-color: white;
   margin-left: 10px;
-  margin-right: 10px;
-  padding: 25px;
- }
+  padding: 50px;
+}
+.colonna:nth-child(3){
+  width: 15%;
+}
+
+.colonna:last-child{
+  width: 35%;
+}
+
+.colonna li:hover{
+  cursor: pointer;
+}
+
+/* footer */
+footer::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+ footer{
+ background-color: white;
+ margin-left: 10px;
+ margin-right: 10px;
+ padding: 25px;
+}
