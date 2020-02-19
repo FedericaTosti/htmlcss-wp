@@ -142,20 +142,49 @@ section{
  /* fine debug */
  }
 
-.ricerca{
- /* debug */
- height: 240px;
- border: solid black;
- /* fine debug */
- margin-left: 10px;
- margin-right: 10px;
-}
+ /* fondo pagina */
+ #ricerca::after{
+   content: "";
+   display: table;
+   clear: both;
+ }
 
- footer{
-  /* debug */
-  height: 70px;
-  border: solid black;
-  /* fine debug */
+ #ricerca{
+  background: white;
   margin-left: 10px;
   margin-right: 10px;
+  border-bottom: solid 1px grey;
+  padding: 20px;
+ }
+
+ .colonna{
+   float: left;
+   width: 20%;
+   margin-right: 10px;
+   margin-left: 10px;
+   padding: 50px;
+ }
+ .colonna:nth-child(3){
+   width: 15%;
+ }
+
+ .colonna:last-child{
+   width: 35%;
+ }
+
+ .colonna li:hover{
+   cursor: pointer;
+ }
+
+ /* footer */
+ footer::after{
+   content: "";
+   display: table;
+   clear: both;
+ }
+  footer{
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 25px;
  }
