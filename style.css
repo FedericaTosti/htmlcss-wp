@@ -12,23 +12,64 @@ margin: 35px, 35px, 0px;
 box-sizing: border-box;
 }
 
+/* header */
 header {
-  /* debug */
-  border: solid black;
-  height: 150px;
-  /* fine debug */
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
+.blocco-titolo{
+  background-image: url(img/banner.jpg);
+  background-size: cover;
+  position: relative;
+  border: solid 10px white;
+  height: 40vh;
+  width: auto;
+}
+
+.titolo{
+  position: absolute;
+  transform: translate( -50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+.sottotitolo{
+  font-size: 20px;
+}
+
+/* nav */
 nav {
-  /* debug */
-  border: solid black;
   height: 50px;
-  /* fine debug */
+  position:relative;
   margin-left: 10px;
   margin-right: 10px;
+  width: auto;
+  background: #666666;
+}
+
+nav ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+
+nav li{
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 3px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+nav li:hover{
+  background-color: #2e302f;
 }
 
 main::after{
