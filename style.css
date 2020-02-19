@@ -6,6 +6,12 @@
 body{
   background-image: url(img/sfondo.png);
 }
+
+.contenitore{
+margin: 35px, 35px, 0px;
+box-sizing: border-box;
+}
+
 header {
   /* debug */
   border: solid black;
@@ -23,6 +29,12 @@ nav {
   /* fine debug */
   margin-left: 10px;
   margin-right: 10px;
+}
+
+main::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* parte sinistra */
@@ -63,7 +75,7 @@ section{
   border: solid black;
   /* fine debug */
   margin: 10px;
-  display: inline-block;
+  float: left;
 }
 
 /* parte destra */
@@ -71,7 +83,7 @@ section{
   float: right;
   width: 289px;
   margin: 10px;
-  display: inline-block;
+  float: left;
 }
 
 .unod{
